@@ -29,10 +29,11 @@ function Featured() {
             (pet) =>
               pet.featured && (
                 <div
+                  key={pet.id}
                   className="card card-side bg-base-100 shadow-sm w-[300px] mx-2 max-h-[409px]"
                   style={{ width: "300px" }}
                 >
-                  <Link key={pet.id} href={`/products/${pet.id}`}>
+                  <Link href={`/products/${pet.id}`}>
                     <Image
                       src={pet.image}
                       alt={pet.name}
@@ -48,19 +49,21 @@ function Featured() {
                       </div>
                       <div className="card-actions justify-end">
                         <button className="btn btn-primary rounded-lg">
-                          Buy Now
+                          Details
                         </button>
                       </div>
                     </div>
-                  </Link>{" "}
+                  </Link>
                 </div>
               )
           )}
         </div>
         <div className="text-center mb-12 mt-4">
-          <button className="btn btn-secondary rounded-lg">
-            View All Products
-          </button>
+          <Link href="/products">
+            <button className="btn btn-secondary rounded-lg">
+              View All Products
+            </button>
+          </Link>
         </div>
       </div>
     </>

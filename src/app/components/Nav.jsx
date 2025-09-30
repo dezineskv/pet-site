@@ -14,14 +14,13 @@ function Nav() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-              >
-                {" "}
+              >              
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
@@ -29,21 +28,21 @@ function Nav() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li className="dark:text-white">
-                <a>Services</a>
+                <a href="/">Services</a>
               </li>
               <li>
                 <a href="/products">Products</a>
                 <ul className="dark:text-white p-2">
                   <li>
-                    <a>Dog Supplies</a>
+                    <a href="/products/">Dog Supplies</a>
                   </li>
                   <li>
-                    <a>Cat Supplies</a>
+                    <a href="/products/">Cat Supplies</a>
                   </li>
                 </ul>
               </li>
               <li className="dark:text-foreground">
-                <a className="dark:text-foreground">About</a>
+                <a href="/" className="dark:text-foreground">About</a>
               </li>
             </ul>
           </div>
@@ -60,23 +59,23 @@ function Nav() {
         <div className="navbar-center hidden lg:flex max-w-[400px] md:pt-2">
           <ul className="menu menu-horizontal px-1">
             <li className="dark:text-white">
-              <a className="dark:text-white">Services</a>
+              <a href="/"className="dark:text-white">Services</a>
             </li>
             <li>
               <details>
                 <summary className="dark:text-white">Pet Supplies</summary>
                 <ul className="">
                   <li>
-                    <a>Dog Food</a>
+                    <a href="/products">Dog Food</a>
                   </li>
                   <li>
-                    <a>Cat Toys</a>
+                    <a href="/products">Cat Toys</a>
                   </li>
                 </ul>
               </details>
             </li>
             <li className="dark:text-foreground">
-              <a className="dark:text-foreground">About</a>
+              <a href="/" className="dark:text-foreground">About</a>
             </li>
           </ul>
         </div>

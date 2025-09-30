@@ -34,11 +34,11 @@ function AllProducts() {
                 </div>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary rounded-lg">
-                    Buy Now
+                    Details
                   </button>
                 </div>
               </div>
-            </Link>{" "}
+            </Link>
           </div>
         ))}
       </div>

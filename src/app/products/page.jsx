@@ -15,11 +15,11 @@ function AllProducts() {
       <h1 className="mb-5 text-5xl text-center font-bold pt-10 pb-2">
         Products
       </h1>
-      <div className="md:max-w-5xl flex sm:flex-col md:flex-row flex-wrap justify-center gap-4 space-y-4 mx-auto pb-10">
+      <div className="flex sm:flex-col mx-auto md:flex-row flex-wrap sm:justify-center sm:px-6 md:max-w-5xl space-y-4 gap-4">
         {pets.map((pet) => (
           <div
             key={pet.id}
-            className="card card-side bg-base-100 shadow-sm w-[300px] mx-2 max-h-[409px]"
+            className="card card-side bg-base-100 shadow-sm w-[300px] mx-auto max-h-[409px]"
           >
             <Link href={`/products/${pet.id}`}>
               <Image

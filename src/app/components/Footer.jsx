@@ -4,8 +4,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content mx-10 p-20 py-10">
-        <nav className="md:pl-30">
+      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content mt-8 mx-auto pt-10 py-10">
+        <nav className="pl-20">
           <h6 className="footer-title">Services</h6>
           <a href="/" className="link link-hover">
             Community
@@ -17,7 +17,7 @@ function Footer() {
             Delivery
           </a>
         </nav>
-        <nav>
+        <nav className="pl-20">
           <h6 className="footer-title">Company</h6>
           <a href="/" className="link link-hover">
             About
@@ -29,7 +29,7 @@ function Footer() {
             Contacts
           </a>
         </nav>
-        <nav>
+        <nav className="pl-20">
           <h6 className="footer-title">Legal</h6>
           <a href="/" className="link link-hover">
             Terms of use
@@ -41,8 +41,8 @@ function Footer() {
             Cookie policy
           </a>
         </nav>
-        <nav className="md:place-self-center md:justify-self-end">
-          <div className="grid grid-flow-col gap-4 pb-2">
+        <nav className="pl-20 md:place-self-center md:justify-self-end">
+          <div className="grid grid-flow-col gap-4 pb-2 pr-8">
             <a href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ function Footer() {
           </div>
         </nav>
       </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t mx-10 px-20 py-1 pb-6">
+      <footer className="footer bg-base-200 text-base-content border-base-300 border-t mx-auto pb-10 py-1">
         <div className="grid-flow-col items-center text-center mx-auto">
           <a href="/">
             <Image

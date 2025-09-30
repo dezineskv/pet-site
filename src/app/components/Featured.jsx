@@ -7,7 +7,7 @@ import Link from "next/link";
 function Featured() {
   return (
     <>
-      <h1 className="mb-5 text-5xl text-center font-bold pt-10 pb-6">
+      <h1 className="mb-5 sm:text-4xl md:text-5xl text-center font-bold pt-10 pb-6">
         Featured Products
       </h1>
       {/* <div className="flex flex-wrap justify-center gap-6 space-y-2 md:max-w-6xl mx-auto px-6">
@@ -21,16 +21,13 @@ function Featured() {
         )}
       </div> */}
       <div className="w-full">
-        <div
-          className="md:max-w-5xl flex sm:flex-col md:flex-row flex-wrap justify-center space-y-4 gap-4"
-          style={{ maxWidth: "1140px", margin: "0 auto" }}
-        >
+        <div className="flex sm:flex-col mx-auto md:max-w-5xl md:flex-row flex-wrap sm:justify-center space-y-4 gap-4">
           {pets.map(
             (pet) =>
               pet.featured && (
                 <div
                   key={pet.id}
-                  className="card card-side bg-base-100 shadow-sm w-[300px] mx-2 max-h-[409px]"
+                  className="card card-side bg-base-100 shadow-sm w-[300px] max-h-[409px] mx-auto"
                   style={{ width: "300px" }}
                 >
                   <Link href={`/products/${pet.id}`}>

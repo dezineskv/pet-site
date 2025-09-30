@@ -4,8 +4,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
-        <nav>
+      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content mx-10 p-20 py-10">
+        <nav className="md:pl-30">
           <h6 className="footer-title">Services</h6>
           <a href="/" className="link link-hover">
             Community
@@ -41,20 +41,6 @@ function Footer() {
             Cookie policy
           </a>
         </nav>
-      </footer>
-      <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-1">
-        <aside className="grid-flow-col items-center">
-          <a href="/">
-            <Image
-              src="https://th.bing.com/th/id/OIG3.mLU0f8ofcpeKRQ1E6QlV?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn"
-              alt="Logo"
-              width={80}
-              height={80}
-              className="pt-4"
-            />
-          </a>
-          <p className="text-xs">since 2025</p>
-        </aside>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4 pb-2">
             <a href="/">
@@ -92,6 +78,20 @@ function Footer() {
             </a>
           </div>
         </nav>
+      </footer>
+      <footer className="footer bg-base-200 text-base-content border-base-300 border-t mx-10 px-20 py-1 pb-6">
+        <div className="grid-flow-col items-center text-center mx-auto">
+          <a href="/">
+            <Image
+              src="https://th.bing.com/th/id/OIG3.mLU0f8ofcpeKRQ1E6QlV?w=270&h=270&c=6&r=0&o=5&dpr=1.4&pid=ImgGn"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="pt-4"
+            />
+          </a>
+          <p className="text-xs">since 2025</p>
+        </div>
       </footer>
     </>
   );

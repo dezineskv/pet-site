@@ -52,7 +52,7 @@ function Nav() {
               alt="Logo"
               width={80}
               height={80}
-              className="pt-2"
+              className="pt-2 sm:h-[70px] sm:w-[70px]"
             />
           </a>
         </div>

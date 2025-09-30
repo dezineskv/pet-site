@@ -44,7 +44,7 @@ function Featured() {
                     <div className="card-body text-foreground">
                       <h2 className="card-title text-foreground">{pet.name}</h2>
                       <p>{pet.description}</p>
-                      <div className="card-actions justify-start font-bold text-lg">
+                      <div className="card-actions font-bold text-lg">
                         ${pet.price}
                       </div>
                       <div className="card-actions justify-end">

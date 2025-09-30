@@ -17,8 +17,11 @@ function AllProducts() {
       </h1>
       <div className="md:max-w-5xl flex sm:flex-col md:flex-row flex-wrap justify-center gap-4 space-y-4 mx-auto pb-10">
         {pets.map((pet) => (
-          <div className="card card-side bg-base-100 shadow-sm w-[300px] mx-2 max-h-[409px]">
-            <Link key={pet.id} href={`/products/${pet.id}`}>
+          <div
+            key={pet.id}
+            className="card card-side bg-base-100 shadow-sm w-[300px] mx-2 max-h-[409px]"
+          >
+            <Link href={`/products/${pet.id}`}>
               <Image
                 src={pet.image}
                 alt={pet.name}

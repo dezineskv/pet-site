@@ -7,26 +7,26 @@ function Footer() {
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content mt-8 mx-auto pt-10 py-10">
         <nav className="pl-20">
           <h6 className="footer-title">Services</h6>
-          <a href="/" className="link link-hover">
+          <a href="/services" className="link link-hover">
             Community
           </a>
-          <a href="/" className="link link-hover">
+          <a href="/services" className="link link-hover">
             Shelters
           </a>
-          <a href="/" className="link link-hover">
+          <a href="/services" className="link link-hover">
             Delivery
           </a>
         </nav>
         <nav className="pl-20">
           <h6 className="footer-title">Company</h6>
-          <a href="/" className="link link-hover">
+          <a href="/about" className="link link-hover">
             About
           </a>
           <a href="/products" className="link link-hover">
             Products
           </a>
-          <a href="/" className="link link-hover">
-            Contacts
+          <a href="/about" className="link link-hover">
+            Contact
           </a>
         </nav>
         <nav className="pl-20">

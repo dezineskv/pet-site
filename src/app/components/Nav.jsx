@@ -27,22 +27,25 @@ function Nav() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li className="dark:text-white">
-                <a href="/">Services</a>
-              </li>
               <li>
                 <a href="/products">Products</a>
-                <ul className="dark:text-white p-2">
+                <ul className="dark:text-white p-2 z-20">
                   <li>
-                    <a href="/products/">Dog Supplies</a>
+                    <a href="/products/">Dog</a>
                   </li>
                   <li>
-                    <a href="/products/">Cat Supplies</a>
+                    <a href="/products/">Cat</a>
+                  </li>
+                  <li>
+                    <a href="/products/">Other</a>
                   </li>
                 </ul>
               </li>
+              <li className="dark:text-white">
+                <a href="/services">Services</a>
+              </li>
               <li className="dark:text-foreground">
-                <a href="/" className="dark:text-foreground">
+                <a href="/about" className="dark:text-foreground">
                   About
                 </a>
               </li>
@@ -60,26 +63,29 @@ function Nav() {
         </div>
         <div className="navbar-center hidden lg:flex max-w-[400px] md:pt-2">
           <ul className="menu menu-horizontal px-1">
-            <li className="dark:text-white">
-              <a href="/" className="dark:text-white">
-                Services
-              </a>
-            </li>
             <li>
               <details>
-                <summary className="dark:text-white">Pet Supplies</summary>
+                <summary className="dark:text-white z-20"><a href="/products">Products</a></summary>
                 <ul className="">
                   <li>
-                    <a href="/products">Dog Food</a>
+                    <a href="/products">Dog</a>
                   </li>
                   <li>
-                    <a href="/products">Cat Toys</a>
+                    <a href="/products">Cat</a>
+                  </li>
+                  <li>
+                    <a href="/products">Other</a>
                   </li>
                 </ul>
               </details>
             </li>
+            <li className="dark:text-white">
+              <a href="/services" className="dark:text-white">
+                Services
+              </a>
+            </li>
             <li className="dark:text-foreground">
-              <a href="/" className="dark:text-foreground">
+              <a href="/about" className="dark:text-foreground">
                 About
               </a>
             </li>

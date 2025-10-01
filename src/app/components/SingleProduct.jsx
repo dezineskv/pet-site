@@ -1,5 +1,5 @@
 import React from "react";
-import pets from "../../db/pets.json";
+import pets from "../../db/items.json";
 import Image from "next/image";
 import Nav from "./Nav";
 import Footer from "./Footer";

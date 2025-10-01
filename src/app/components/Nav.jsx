@@ -14,7 +14,7 @@ function Nav() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-              >              
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -42,7 +42,9 @@ function Nav() {
                 </ul>
               </li>
               <li className="dark:text-foreground">
-                <a href="/" className="dark:text-foreground">About</a>
+                <a href="/" className="dark:text-foreground">
+                  About
+                </a>
               </li>
             </ul>
           </div>
@@ -59,7 +61,9 @@ function Nav() {
         <div className="navbar-center hidden lg:flex max-w-[400px] md:pt-2">
           <ul className="menu menu-horizontal px-1">
             <li className="dark:text-white">
-              <a href="/"className="dark:text-white">Services</a>
+              <a href="/" className="dark:text-white">
+                Services
+              </a>
             </li>
             <li>
               <details>
@@ -75,11 +79,13 @@ function Nav() {
               </details>
             </li>
             <li className="dark:text-foreground">
-              <a href="/" className="dark:text-foreground">About</a>
+              <a href="/" className="dark:text-foreground">
+                About
+              </a>
             </li>
           </ul>
         </div>
-        <div className="navbar-end max-w-[400px] md:pt-2">
+        <div className="navbar-end max-w-[400px]  sm:pt-4 md:pt-2">
           <input
             type="text"
             placeholder="Search"
